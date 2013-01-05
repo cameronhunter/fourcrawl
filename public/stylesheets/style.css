@@ -1,0 +1,79 @@
+html {
+  background-color: #eef3f8;
+}
+body {
+  undefined
+}
+#page-wrapper {
+  position: relative;
+  width: 980px;
+  /* centers the document */
+  margin: 0 auto;
+  /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+  overflow: hidden;
+  height: 1000px;
+}
+/* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ body>p, body>h1, body>h2, body>h3, body>h4, body>h5, body>h6 {
+  margin-top: 0 !important;
+}
+.image {
+  border-radius: 0px;
+  margin: 0px;
+  width: 1405px;
+  height: 587px;
+  position: absolute;
+  top: 0px;
+  left: -16px;
+  background: transparent url(image.jpg) top left no-repeat;
+  ;
+}
+.image-1 {
+  border-radius: 0px;
+  margin: 0px;
+  width: 565px;
+  height: 483px;
+  position: absolute;
+  top: 104px;
+  left: 73px;
+}
+.image-2 {
+  border-radius: 0px;
+  margin: 0px;
+  width: 79px;
+  height: 79px;
+  position: absolute;
+  top: 76px;
+  left: 592px;
+}
+.image-3 {
+  border-radius: 0px;
+  margin: 0px;
+  width: 268px;
+  height: 134px;
+  position: absolute;
+  top: 160px;
+  left: 676px;
+}
+.image-4 {
+  border-radius: 0px;
+  margin: 0px;
+  width: 274px;
+  height: 55px;
+  position: absolute;
+  top: 320px;
+  left: 676px;
+}
+.image-5 {
+  border-radius: 0px;
+  margin: 0px;
+  width: 409px;
+  height: 43px;
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
