@@ -8,11 +8,13 @@ object ApplicationBuild extends Build {
     val appVersion      = "1.0-SNAPSHOT"
 
     val appDependencies = Seq(
-      // Add your project dependencies here,
+      "fi.foyt" % "foursquare-api" % "1.0.2"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
-      // Add your own project settings here      
+      
+      resolvers += "Foursquare API" at "http://foursquare-api-java.googlecode.com/svn/repository"
+      
     )
 
 }
