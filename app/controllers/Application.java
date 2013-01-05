@@ -1,22 +1,22 @@
 package controllers;
 
-import play.Configuration;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.With;
 import views.html.index;
-import fi.foyt.foursquare.api.FoursquareApi;
+import actions.Authentication;
+import actions.HomeIfAuthenticated;
 
 public class Application extends Controller {
 
+    @With( { HomeIfAuthenticated.class } )
     public static Result index() {
-        Configuration configuration = play.Configuration.root();
+        return ok( index.render( "" ) );
+    }
 
-        String clientid = configuration.getString( "foursquare.clientid" );
-        String secret = configuration.getString( "foursquare.secret" );
-
-        FoursquareApi client = new FoursquareApi( clientid, secret, "http://localhost:9000/callback" );
-
-        return ok( index.render( "Your new application is ready." ) );
+    @With( { Authentication.class } )
+    public static Result home() {
+        return ok( "Logged in" );
     }
 
 }
