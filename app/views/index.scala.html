@@ -1,33 +1,13 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700"
-    media="screen" rel="stylesheet" type="text/css" />
-    <link href="bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css"
-    />
-    <link href="fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans
-    for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
--->
-    <title>Homepage</title>
-  </head>
-  
-  <body>
-    <div id="page-wrapper">
-      <div class="image">
-        <img class="image-1" src="/assets/images/image-1.png" />
-        <img class="image-2" src="/assets/images/image-2.png" />
-        <img class="image-3" src="/assets/images/image-3.png" />
-        <img class="image-4" src="/assets/images/image-4.png" />
-      </div>
-      <img class="image-5" src="/assets/images/image-5.png" />
-    </div>
-  </body>
+@(message: String)
 
-</html>
+@main("Home") {
+    
+	<div class="image">
+		<img class="image-1" src="/assets/images/image-1.png" />
+		<img class="image-2" src="/assets/images/image-2.png" />
+		<img class="image-3" src="/assets/images/image-3.png" />
+		<img class="image-4" src="/assets/images/image-4.png" />
+	</div>
+	<img class="image-5" src="/assets/images/image-5.png" />
+
+}

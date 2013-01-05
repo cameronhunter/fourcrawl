@@ -2,14 +2,23 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+	    <meta charset="utf-8" />
+        <title>fourcrawl // @title</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap-responsive.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/fontawesome.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/style.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
     </head>
     <body>
+    	<div id="page-wrapper">
         @content
+        </div>
     </body>
 </html>
