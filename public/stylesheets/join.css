@@ -84,7 +84,7 @@ body {
   position: absolute;
   top: 1px;
   left: 0px;
-  background: transparent url(header.png) top left no-repeat;
+  background: transparent url(/assets/images/header.png) top left no-repeat;
   ;
 }
 .dom-heading {

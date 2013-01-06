@@ -27,7 +27,7 @@ public class Application extends Controller {
 
         Badges badges = client.usersBadges( user.getId() ).getResult();
 
-        return ok( views.html.home.render( user, badges.getBadges() ) );
+        return ok( views.html.home.render() );
     }
 
 }

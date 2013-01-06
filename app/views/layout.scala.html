@@ -1,7 +1,6 @@
-@(title: String)(content: Html)
+@(title: String, resources: Html = Html(""))(content: Html)
 
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
 	    <meta charset="utf-8" />
@@ -16,6 +15,7 @@
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/join.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+        @resources
     </head>
     <body>
     	<div id="page-wrapper">

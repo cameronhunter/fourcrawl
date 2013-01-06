@@ -29,7 +29,7 @@ body {
   position: absolute;
   top: 0px;
   left: -16px;
-  background: transparent url(image.jpg) top left no-repeat;
+  background: transparent url(/assets/images/image.jpg) top left no-repeat;
   ;
 }
 .image-1 {
