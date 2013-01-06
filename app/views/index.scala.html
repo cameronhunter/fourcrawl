@@ -1,13 +1,13 @@
 @(message: String)
 
-@main("Home") {
+@layout("welcome") {
     
 	<div class="image">
-		<img class="image-1" src="/assets/images/image-1.png" />
-		<img class="image-2" src="/assets/images/image-2.png" />
-		<img class="image-3" src="/assets/images/image-3.png" />
-		<a href="@routes.Authentication.start"><img class="image-4" src="/assets/images/image-4.png" /></a>
+		<img class="image-1" src="@routes.Assets.at("images/image-1.png")" />
+		<img class="image-2" src="@routes.Assets.at("images/image-2.png")" />
+		<img class="image-3" src="@routes.Assets.at("images/image-3.png")" />
+		<a href="@routes.Authentication.start"><img class="image-4" src="@routes.Assets.at("images/image-4.png")" /></a>
 	</div>
-	<img class="image-5" src="/assets/images/image-5.png" />
+	<img class="image-5" src="@routes.Assets.at("images/image-5.png")" />
 
 }
