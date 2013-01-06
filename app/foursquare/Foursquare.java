@@ -1,6 +1,7 @@
 package foursquare;
 
 import play.Configuration;
+import play.mvc.Http.Request;
 import fi.foyt.foursquare.api.FoursquareApi;
 
 
@@ -15,6 +16,11 @@ public final class Foursquare {
         return new FoursquareApi( CLIENT_ID, SECRET, CALLBACK_URL );
     }
 
-    private Foursquare() {}
+    public static FoursquareApi authenticatedClient( Request request ) {
+        FoursquareApi client = client();
+        client.setoAuthToken( request.cookies().get( "oauthtoken" ).value() );
+        return client;
+    }
 
+    private Foursquare() {}
 }
