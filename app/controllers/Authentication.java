@@ -12,10 +12,10 @@ public class Authentication extends Controller {
         return redirect( Foursquare.client().getAuthenticationUrl() );
     }
 
-    public static Result callback() throws FoursquareApiException {
+    public static Result callback( String code ) throws FoursquareApiException {
         FoursquareApi client = Foursquare.client();
 
-        client.authenticateCode( request().queryString().get( "code" )[0] );
+        client.authenticateCode( code );
 
         response().setCookie( "oauthtoken", client.getOAuthToken() );
 

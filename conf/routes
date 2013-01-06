@@ -6,7 +6,7 @@
 GET     /                           controllers.Application.index()
 GET		/home						controllers.Application.home()
 GET		/authentication				controllers.Authentication.start()
-GET		/authentication/callback	controllers.Authentication.callback()
+GET		/authentication/callback	controllers.Authentication.callback(code)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
