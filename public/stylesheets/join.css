@@ -1,0 +1,150 @@
+html {
+  background-color: #d9d8dd;
+}
+body {
+  undefined
+}
+#page-wrapper {
+  position: relative;
+  width: 980px;
+  /* centers the document */
+  margin: 0 auto;
+  /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+  overflow: hidden;
+  height: 1000px;
+}
+/* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ body>p, body>h1, body>h2, body>h3, body>h4, body>h5, body>h6 {
+  margin-top: 0 !important;
+}
+/* Set floating dom-heading margins to 0 */
+[class*="dom-heading"] {
+  margin: 0;
+}
+/* Set floating body text margins to 0 */
+[class*="dom-body-text"] p {
+  margin: 0 0 10px 0;
+}
+.btn.btn-1 {
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  top: 24px;
+  left: 740px;
+}
+.btn.btn-2 {
+  font-size: 15.555556297302246px;
+  text-align: left;
+  padding: 11px 19px 11px 150px;
+  width: 339px;
+  height: 100px;
+  position: absolute;
+  top: 231px;
+  left: 421px;
+}
+.btn.btn-3 {
+  font-size: 15.555556297302246px;
+  text-align: left;
+  padding: 11px 19px 11px 150px;
+  width: 340px;
+  height: 100px;
+  position: absolute;
+  top: 231px;
+  left: 60px;
+}
+.btn.btn-4 {
+  padding: 11px 19px 11px 150px;
+  font-size: 15.555556297302246px;
+  text-align: left;
+  width: 340px;
+  height: 100px;
+  position: absolute;
+  top: 371px;
+  left: 420px;
+}
+.btn.btn-5 {
+  font-size: 15.555556297302246px;
+  text-align: left;
+  padding: 11px 19px 11px 150px;
+  width: 340px;
+  height: 100px;
+  position: absolute;
+  top: 372px;
+  left: 60px;
+}
+.header {
+  border-radius: 0px;
+  margin: 0px;
+  width: 1405px;
+  height: 89px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  background: transparent url(header.png) top left no-repeat;
+  ;
+}
+.dom-heading {
+  font-family:"Arial";
+  font-size: 25.55555534362793px;
+  line-height: 34.4444465637207px;
+  width: 478.22222900390625px;
+  height: 42px;
+  position: absolute;
+  top: 151px;
+  left: 61.77777099609375px;
+}
+.dom-body-text {
+  overflow: hidden;
+  width: 360px;
+  height: 20px;
+  position: absolute;
+  top: 184px;
+  left: 60px;
+}
+.dom-body-text p {
+  background-image: none;
+  font-family: Arial;
+  line-height: 23.33333396911621px;
+  font-size: 14.44444465637207px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #333333;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: initial;
+  text-align: left;
+  text-shadow: none;
+  padding: 0px;
+  border: none;
+}
+.sf {
+  border-radius: 0px;
+  margin: 0px;
+  width: 86px;
+  height: 67px;
+  position: absolute;
+  top: 249px;
+  left: 79px;
+}
+.ny {
+  border-radius: 0px;
+  margin: 0px;
+  width: 86px;
+  height: 67px;
+  position: absolute;
+  top: 249px;
+  left: 439px;
+}
+
+.footer {
+  border-radius: 0px;
+  margin: 0px;
+  width: 1405px;
+  height: 125px;
+  position: absolute;
+  top: 655px;
+  left: -225px;
+}
