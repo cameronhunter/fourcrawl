@@ -1,0 +1,8 @@
+@(user: fi.foyt.foursquare.api.entities.CompleteUser)
+
+@layout("home") {
+	
+	<h1>@user.getFirstName()</h1>
+	<img src="@user.getPhoto()" />
+	
+}
