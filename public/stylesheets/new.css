@@ -1,0 +1,186 @@
+html {
+  background-color: #d9d8dd;
+}
+body {
+  undefined
+}
+#page-wrapper {
+  position: relative;
+  width: 980px;
+  /* centers the document */
+  margin: 0 auto;
+  /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+  overflow: hidden;
+  height: 1000px;
+}
+/* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ body>p, body>h1, body>h2, body>h3, body>h4, body>h5, body>h6 {
+  margin-top: 0 !important;
+}
+/* Set floating dom-heading margins to 0 */
+[class*="dom-heading"] {
+  margin: 0;
+}
+/* Set floating body text margins to 0 */
+[class*="dom-body-text"] p {
+  margin: 0 0 10px 0;
+}
+.btn.btn-1 {
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.74902);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0470588);
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0470588);
+  -o-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0470588);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0470588);
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  top: 24px;
+  left: 740px;
+}
+.btn.btn-2 {
+  width: 72px;
+  height: 30px;
+  position: absolute;
+  top: 413px;
+  left: 381px;
+}
+.btn.btn-3 {
+  width: 72px;
+  height: 30px;
+  position: absolute;
+  top: 413px;
+  left: 81px;
+}
+.btn.btn-4 {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 413px;
+  left: 458px;
+}
+.btn.btn-5 {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 413px;
+  left: 158px;
+}
+.dom-heading.dom-heading-1 {
+  font-family:"Arial";
+  font-size: 25.55555534362793px;
+  line-height: 34.4444465637207px;
+  width: 475px;
+  height: 42px;
+  position: absolute;
+  top: 151px;
+  left: 62px;
+}
+.dom-heading.dom-heading-2 {
+  font-family:"Arial";
+  font-size: 17.77777862548828px;
+  line-height: 34.4444465637207px;
+  width: 188px;
+  height: 42px;
+  position: absolute;
+  top: 277px;
+  left: 383px;
+}
+.dom-heading.dom-heading-3 {
+  font-family:"Arial";
+  font-size: 17.77777862548828px;
+  line-height: 34.4444465637207px;
+  width: 189px;
+  height: 42px;
+  position: absolute;
+  top: 277px;
+  left: 83px;
+}
+.form-actions.form-actions-1 {
+  width: 219px;
+  height: 159.88888883590698px;
+  position: absolute;
+  top: 260px;
+  left: 361px;
+}
+.form-actions.form-actions-2 {
+  width: 219px;
+  height: 159.88888883590698px;
+  position: absolute;
+  top: 260px;
+  left: 61px;
+}
+input.textinput.input.textinput-1 {
+  width: 167.81481456756592px;
+  height: 15.777777671813965px;
+  position: absolute;
+  top: 324px;
+  left: 381px;
+}
+input.textinput.input.textinput-2 {
+  width: 167.81481456756592px;
+  height: 15.777777671813965px;
+  position: absolute;
+  top: 324px;
+  left: 81px;
+}
+input.textinput.input.textinput-3 {
+  width: 168.81481456756592px;
+  height: 16.777777671813965px;
+  position: absolute;
+  top: 361px;
+  left: 81px;
+}
+input.textinput.input.textinput-4 {
+  width: 168.81481456756592px;
+  height: 16.777777671813965px;
+  position: absolute;
+  top: 361px;
+  left: 381px;
+}
+.header {
+  border-radius: 0px;
+  margin: 0px;
+  width: 1405px;
+  height: 89px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  background: transparent url(header.png) top left no-repeat;
+  ;
+}
+.dom-body-text {
+  overflow: hidden;
+  width: 486px;
+  height: 20px;
+  position: absolute;
+  top: 184px;
+  left: 60px;
+}
+.dom-body-text p {
+  background-image: none;
+  font-family: Arial;
+  line-height: 23.33333396911621px;
+  font-size: 14.44444465637207px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #333333;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: initial;
+  text-align: left;
+  text-shadow: none;
+  padding: 0px;
+  border: none;
+}
+.footer {
+  border-radius: 0px;
+  margin: 0px;
+  width: 1405px;
+  height: 125px;
+  position: absolute;
+  top: 655px;
+  left: -225px;
+}
