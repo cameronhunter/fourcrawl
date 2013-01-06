@@ -7,6 +7,7 @@ import actions.Authentication;
 import actions.HomeIfAuthenticated;
 import fi.foyt.foursquare.api.FoursquareApi;
 import fi.foyt.foursquare.api.FoursquareApiException;
+import fi.foyt.foursquare.api.entities.Badges;
 import fi.foyt.foursquare.api.entities.CompleteUser;
 import foursquare.Foursquare;
 
@@ -24,7 +25,9 @@ public class Application extends Controller {
 
         CompleteUser user = client.user( "self" ).getResult();
 
-        return ok( views.html.home.render( user ) );
+        Badges badges = client.usersBadges( user.getId() ).getResult();
+
+        return ok( views.html.home.render( user, badges.getBadges() ) );
     }
 
 }

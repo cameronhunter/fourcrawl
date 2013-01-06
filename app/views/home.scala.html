@@ -1,8 +1,14 @@
-@(user: fi.foyt.foursquare.api.entities.CompleteUser)
+@(user: fi.foyt.foursquare.api.entities.CompleteUser)(badges: Array[fi.foyt.foursquare.api.entities.Badge])
 
 @layout("home") {
 	
 	<h1>@user.getFirstName()</h1>
 	<img src="@user.getPhoto()" />
+	
+	<ul>
+	@for(badge <- badges) {
+	  <li>@badge.getName() - @badge.getHint()</li>
+	} 
+	</ul>
 	
 }
