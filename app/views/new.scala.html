@@ -1,5 +1,5 @@
 @resources = {    
-  <link href="new.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="@routes.Assets.at("stylesheets/new.css")" media="screen" rel="stylesheet" type="text/css" />
 }
 
 @layout("New") {
@@ -33,3 +33,4 @@
       <button class="btn btn-5">Cancel</button>
       <img class="footer" src="footer.png" />
     </div>
+}

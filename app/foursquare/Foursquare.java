@@ -2,8 +2,6 @@ package foursquare;
 
 import play.Configuration;
 import play.mvc.Http.Request;
-import fi.foyt.foursquare.api.FoursquareApi;
-
 
 public final class Foursquare {
 
