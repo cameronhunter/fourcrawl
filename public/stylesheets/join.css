@@ -82,7 +82,7 @@ body {
   width: 1405px;
   height: 89px;
   position: absolute;
-  top: 1px;
+  top: 0px;
   left: 0px;
   background: transparent url(/assets/images/header.png) top left no-repeat;
   ;
@@ -146,5 +146,5 @@ body {
   height: 125px;
   position: absolute;
   top: 655px;
-  left: -225px;
+  left: 0px;
 }
